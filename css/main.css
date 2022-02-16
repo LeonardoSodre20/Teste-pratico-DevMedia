@@ -1,0 +1,262 @@
+.header{
+    height: 120px;
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px black;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu-hamburguer{
+    display: none;
+}
+
+.logo{
+    font-size: 2em;
+    transition: 0.3s;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.logo:hover{
+    background-color: rgb(165, 164, 164);
+    border-radius: 15px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-list .nav-item{
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.nav-list .nav-item:hover{
+    background-color: rgb(165, 164, 164);
+    border-radius: 15px;
+}
+
+#inputSearch_menu{
+    height: 40px;
+    width: 250px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0,0, 0, 0.5
+    );
+    text-indent: 15px;
+}
+
+
+/*Corpo do Site*/
+
+.container-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.container-noticias{
+    height: 450px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0,0, 0, 0.5
+    );
+    border-radius: 15px;
+    margin: 20px 20px;
+}
+
+.container-noticias > h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.container-noticias > p{
+    text-align: justify;
+    padding: 15px;
+    line-height: 22px;
+}
+
+.container-noticias > a{
+    text-align: center;
+    background-color: darkgray;
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0,0, 0, 0.7
+    );
+    margin-top: 5px;
+}
+
+.container-noticias > a:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+/*footer*/
+
+.footer{
+    height: 120px;
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0 0 20px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > p{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.footer span{
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.footer span:hover{
+    background-color: rgb(133, 131, 131);
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+/*Comportamentos do Site*/
+
+
+
+/*Responsive Web Site*/
+
+@media screen and (max-width: 850px) {
+    .nav-list{
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       top: 120px;
+       right: 0;
+       background-color: rgb(196, 196, 196);
+       width: 100%;
+       justify-content: start;
+       align-items: flex-end;
+       transform: translateX(100%);
+       transition: 0.3s;
+    }
+
+    .active-menu-mobile{
+        transform: translateX(0);
+    }
+
+    .nav-list > li{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.344);
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-list input{
+        margin: auto;
+    }
+
+    .nav-list .icon-search{
+        display: inline-block;
+        position: relative;
+        top: 20%;
+        right: 20%;
+        transform: translateY(-150%);
+    }
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-hamburguer {
+        margin-right: 40px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container-noticias {
+        width: 720px;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .container-noticias {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .container-noticias {
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 468px){
+    .container-noticias {
+        height: 450px;
+    }
+
+    .footer > p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 422px){
+    .container-noticias {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .container-noticias {
+        height: 550px;
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .container-noticias{
+        height: 600px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container-noticias {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 334px){
+    .container-noticias {
+        height: 750px;
+    }
+}
+    
+
+
