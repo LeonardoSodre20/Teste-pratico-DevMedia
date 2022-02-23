@@ -156,9 +156,7 @@
        transition: 0.3s;
     }
 
-    .contianer-icon-search{
-        margin-right: 40px;
-    }
+    
 
     .active-menu-mobile{
         transform: translateX(0);
@@ -233,6 +231,10 @@
 @media screen and (max-width: 422px){
     .container-noticias {
         height: 500px;
+    }
+
+    .contianer-icon-search{
+        margin-right: 20px;
     }
 }
 
