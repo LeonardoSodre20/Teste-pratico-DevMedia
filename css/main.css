@@ -61,6 +61,8 @@
     justify-content: center;
     margin: 50px;
     flex-wrap: wrap;
+    animation: backInLeft;
+    animation-duration: 2s;
 }
 
 .container-noticias{
@@ -75,6 +77,7 @@
     );
     border-radius: 15px;
     margin: 20px 20px;
+    
 }
 
 .container-noticias > h1{
